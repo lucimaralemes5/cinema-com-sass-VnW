@@ -1,0 +1,66 @@
+$cor_fundo_roxa: rgb(77, 59, 233);
+$cor_roxo_claro: rgb(192, 186, 233);
+$cor_roxo_super_claro: rgb(204, 201, 221);
+$cor_letra_branca:#ffff;
+
+@mixin display_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  @include display_center;
+  justify-content: space-around;
+  background-color:$cor_fundo_roxa;
+  color:$cor_letra_branca;
+  height:23vh;
+
+  ul{
+    @include display_center;
+    justify-content: space-between;
+    list-style:none;
+    font-size: 22px;
+    width: 38vw;
+    
+  }
+  li:hover{
+    transform: scale(110%);
+  }
+  img{
+    width:10vw;
+  }
+}
+
+main{
+  background-color:$cor_roxo_super_claro;
+  section{
+    @include display_center;
+    height:70vh;
+  }
+
+  h1{
+    background-color: $cor_roxo_claro;
+    text-align:  center;
+    padding: 30px;
+  }
+}
+    figure{
+      @include display_center;
+      width:100%;
+      justify-content: space-evenly;
+       
+      img{
+      width: 20vw;
+      height: 60vh;
+      border-radius: 20px;
+      border:solid;
+    }
+}
+    
